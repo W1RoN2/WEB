@@ -41,28 +41,11 @@ section {
     border-radius: 5px;
 }
 
-#me {
-    margin-bottom: 20px; 
-}
-
-.profile {
-    display: flex;           
-    align-items: center;    
-}
-
-.profile img {
-    width: 100px;    
-    height: auto; 
-    border-radius: 50%;     
-    margin-right: 20px;     
-}
-
-#me h2 {
-    margin-bottom: 10px;    
-}
-
-#me p {
-    margin: 0;              
+#me img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 
