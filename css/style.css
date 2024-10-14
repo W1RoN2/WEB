@@ -41,12 +41,17 @@ section {
     border-radius: 5px;
 }
 
-#me img {
-    width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+#me {
+    display: flex; 
+    align-items: center;  
 }
+
+#me img {
+    width: 150px; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+}
+
 
 footer {
     background-color: #333;
