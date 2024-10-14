@@ -6,8 +6,7 @@ body {
 }
 
 header {
-    background-color: #6b07a5;
-    color: white;
+    background-color: #5602a3; 
     text-align: center;
     padding: 1em;
 }
@@ -41,11 +40,17 @@ section {
     border-radius: 5px;
 }
 
+#me {
+    display: flex;  
+    align-items: center;
+}
+
 #me img {
     width: 150px;
     border-radius: 50%;
+    margin-right: 20px; 
     display: block;
-    margin: 0 auto;
+    float: left; 
 }
 
 footer {
