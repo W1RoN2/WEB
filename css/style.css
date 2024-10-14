@@ -42,14 +42,26 @@ section {
 }
 
 #me {
-    display: flex; 
-    align-items: center;  
+    margin-bottom: 20px; 
 }
 
-#me img {
-    width: 150px; 
-    border-radius: 50%; 
-    margin-right: 20px; 
+.profile {
+    display: flex;           
+    align-items: center;    
+}
+
+.profile img {
+    width: 150px;           
+    border-radius: 50%;     
+    margin-right: 20px;     
+}
+
+#me h2 {
+    margin-bottom: 10px;    
+}
+
+#me p {
+    margin: 0;              
 }
 
 
