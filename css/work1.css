@@ -71,3 +71,20 @@ footer {
     width: 100%;
     font-size: 14px;
 }
+.top-right-nav {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 16px;
+}
+
+.top-right-nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+
+.top-right-nav a:hover {
+    color: #000000; 
+}
