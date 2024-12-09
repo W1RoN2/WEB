@@ -1,0 +1,89 @@
+header nav ul li:first-child
+{
+    font-weight: bold;
+}
+
+/* Не працює чомусь :/ */
+a:last-child
+{
+    color: red;
+}
+
+input:disabled
+{
+    background-color: gray;
+}
+
+div > p
+{
+    font-weight: 700;
+    /* color: green; */
+}
+
+a[href^="https"]
+{
+    color: green;
+}
+
+input[type="text"]
+{
+    border: 1px solid blue;
+}
+
+li:first-child, li:last-child
+{
+    font-size: 24px;
+    /* color: magenta; */
+}
+
+div p
+{
+    font-size: 16px;
+    /* color: magenta; */
+}
+
+/* Я не розумію що це змінює, навіть якщо я поставлю це */
+input:checked
+{
+    background-color: lightblue;
+    /* color: magenta;
+    padding: 5px; */
+}
+
+li > a 
+{
+    text-decoration: underline;
+}
+
+
+li:nth-child(even)
+{
+    font-weight: bold;
+}
+
+/* Це такий самий колір як і минулий, розрізнити неможливо */
+input[type="text"]:not(:disabled)
+{
+    background-color: grey;
+}
+
+p:first-of-type 
+{
+    font-size: 24px;
+    /* color: magenta; */
+}
+
+.special + li
+{
+    text-decoration: line-through;
+}
+
+p::first-letter
+{
+    font-size: 36px;
+}
+
+a::after 
+{
+    content: "↗";
+}
