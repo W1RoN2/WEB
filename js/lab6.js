@@ -2,28 +2,22 @@ function catchPokemon(pokemonId) {
     const pokemon = document.getElementById(pokemonId);
     const catchMessage = document.getElementById('catchMessage');
     
-    // Запускаємо анімацію спіймання покемона
-    pokemon.style.animation = 'catchPokemonAnimation 1s forwards'; // Анімація руху покемона в покебол
+    pokemon.style.animation = 'catchPokemonAnimation 1s forwards'; 
     
-    // Додаємо затримку, щоб покемон встиг "влетіти" в покебол
     setTimeout(() => {
-        // Замінюємо покемона на покебол
         pokemon.innerHTML = '<img src="../images/pokeballs.png" alt="Caught!">';
         
-        // Запускаємо анімацію появи покеболу
         pokemon.style.animation = 'ballPopOut 0.5s forwards';
         
-        // Показуємо повідомлення про спіймання
         catchMessage.textContent = `You caught ${pokemonId.charAt(0).toUpperCase() + pokemonId.slice(1)}!`;
         catchMessage.style.display = 'block';
         
-        // Через 3 секунди відновлюємо покемона і приховуємо повідомлення
         setTimeout(() => {
             const pokemonImage = getPokemonImage(pokemonId);
             pokemon.innerHTML = `<img src="${pokemonImage}" alt="${pokemonId.charAt(0).toUpperCase() + pokemonId.slice(1)}">`;
             catchMessage.style.display = 'none';
         }, 3000);
-    }, 1000); // Чекаємо 1 секунду для анімації
+    }, 1000); 
 }
 
 function getPokemonImage(pokemonId) {
